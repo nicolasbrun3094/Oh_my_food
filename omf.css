@@ -1,0 +1,70 @@
+/*** FONTS ***/
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&family=Shrikhand&display=swap');
+
+/*** Title ***/
+h1{
+    font-family: 'Shrikhand', cursive;
+}
+
+/*** Texte ***/
+font-family: 'Roboto', sans-serif;
+
+.menu{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+ul {
+    list-style: none;
+}
+
+/*** Footer ***/
+
+footer{
+    background-color: black;
+}
+
+.foot{
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    
+    h1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .localisation{
+        display: flex;
+        background-color: #f6f6f6;
+    }
+    
+    .intro{
+        justify-content: center;
+        background-color: #f6f6f6;
+    }
+
+    figcaption{
+        box-shadow: 0px 0px 15px #e5e5e5;
+        border-radius: 15px;
+    }
+    .menu{
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .txtimg{
+        margin-left: 12px;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
