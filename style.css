@@ -51,6 +51,8 @@ table {
   border-spacing: 0;
 }
 
+/*** Color ***/
+/*** Mixin ***/
 /*** General ***/
 body {
   font-family: 'Roboto', sans-serif;
@@ -92,6 +94,12 @@ h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 h4 {
@@ -124,7 +132,6 @@ h6 {
 }***/
 .title {
   border-top: 2px solid black;
-  background-color: #eaeaea;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,8 +358,8 @@ figcaption {
   font-style: italic;
 }
 
-.like {
-  margin-left: 58%;
+.last {
+  margin-bottom: 62px;
 }
 
 .like:hover {
@@ -378,7 +385,7 @@ figcaption {
 .bg_card {
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: 150%;
+  height: 100%;
   max-width: 100%;
   z-index: 0;
   position: relative;
@@ -431,7 +438,6 @@ figcaption {
 /*** Footer ***/
 footer {
   background-color: #353535;
-  margin-top: 62px;
 }
 
 .foot {
