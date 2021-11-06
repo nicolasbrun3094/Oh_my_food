@@ -125,11 +125,6 @@ h6{
     height: 60px;
 }
 
-.arrow{
-    margin-top: 25px;
-    margin-left: 20px;
-}
-
 .localisation{
     display: flex;
     height: 50px;
@@ -294,7 +289,7 @@ figcaption{
 }
 
 .like{
-    margin-left: 70%;
+    margin-left: 58%;
 }
 
 .like:hover{
@@ -306,6 +301,12 @@ figcaption{
 .main {
     background-color: #f6f6f6;
 }
+
+.arrow{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
 .card h2{
     font-weight: bold;
     font-size: 2em;
