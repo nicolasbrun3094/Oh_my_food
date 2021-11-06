@@ -67,7 +67,6 @@ ul {
 a {
   text-decoration: none;
   color: black;
-  width: 90%;
 }
 
 /*** Title ***/
@@ -129,10 +128,11 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 60px;
 }
 
 .arrow {
-  margin-top: 4px;
+  margin-top: 25px;
   margin-left: 20px;
 }
 
@@ -310,6 +310,10 @@ nav {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-color: #ffffff;
+}
+
+figcaption a {
+  width: 90%;
 }
 
 .thumbnail {
