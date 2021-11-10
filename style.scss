@@ -50,21 +50,21 @@ table {
 /*** Color ***/
 
 $grey:#eaeaea;
+$green-mint:#99e2d0;
 
 /*** Mixin ***/
 
 @mixin inside-btn {
     font-size: 1.5em;
+    height: 50px;
     border-radius: 50px;
     background-color: #db6edb;
     color: #ffffff;
-    height: 50px;
 }
 
 /*** General ***/
 
 body{
-    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     max-width: 1440px;
     margin: auto;
@@ -90,8 +90,8 @@ h1{
 
 h2{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.3em;
     font-weight: bold;
+    font-size: 1.7em;
     padding-top: 25px;
     margin-left: 30px;
     margin-bottom: 15px;
@@ -100,29 +100,29 @@ h2{
 h3{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    font-size: 1.3em;
     padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
 }
 
 h4{
-    font-family: 'Shrikhand', cursive;
-    font-weight: bold;
     font-size: 13px;
     padding-top: 25px;
     margin-bottom: 25px;
 }
 
 h5{
-    border-bottom: 5px solid #99e2d0;
+    border-bottom: 5px solid $green-mint;
     margin-left: 25px;
     padding-bottom: 7px;
     font-size: 1.2em;
-    margin-right: 462px;
+    width: 5%;
+    font-family: 'Roboto', sans-serif;
 }
 
 h6{
-    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
     margin-left: 13px;
     margin-top: 18px;
@@ -131,9 +131,6 @@ h6{
 
 /*** Head ***/
 
-/***.placement-bio{
-    
-}***/
 .title{
     border-top: 2px solid black;
     display: flex;
@@ -155,6 +152,10 @@ h6{
     margin-right: 15px;
 }
 
+.localisation p{
+    font-family: 'Roboto', sans-serif;   
+}
+
 .intro{
     background-color: #f6f6f6;
     height: 285px;
@@ -168,20 +169,22 @@ h6{
 }
 
 .reserved{
-    font-size: 1.6em;
+    font-size: 1.7em;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    margin-left: 60px;
+    margin-right: 60px;
     display: flex;  
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     margin-top: 40px;
 }
 
-.details{
-    font-style: italic;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.details{ 
+    font-size: 1.25em;
+    text-align: center;
     margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .icone-search{
@@ -204,20 +207,31 @@ nav{
     box-shadow: 0px 0px 15px #c6c6c6;
 }
 
+.btn p{
+    font-size: 0.8em;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
 .btn2{
     border: 1px solid #d9d9d9;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-radius: 100px;
+    border-radius: 20px;
     box-shadow: 0px 0px 15px #e7e7e7;
     font-size: 1.2em;
     z-index: 0;
-    font-weight: bold;
     height: 72px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     box-shadow: 0px 0px 15px #c6c6c6;
+}
+
+.btn2 p{
+    padding-right: 70px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 
 .btn2:hover{
@@ -292,11 +306,12 @@ figcaption{
 
 .txtimg p{
     padding-bottom: 15px;
-    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
 }
 
 .last{
-    margin-bottom: 62px;
+    padding-bottom: 62px;
 }
 
 .like{  
@@ -316,12 +331,14 @@ figcaption{
 .arrow{
     margin-top: 20px;
     margin-left: 20px;
+    position: absolute;
 }
 
 .card h2{
-    font-weight: bold;
     font-size: 2em;
-    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Shrikhand', cursive;
 }
 
 .bg_card{
@@ -341,7 +358,7 @@ figcaption{
 }
 
 .heart-card{
-    margin-left: 32px;
+    margin-right: 35px;
 }
 .flat{
     box-shadow: 0px 0px 15px #e8e8e8;
@@ -362,8 +379,8 @@ figcaption{
 }
 
 .desc-flat p{
-    font-style: italic;
     margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 .price{
     font-weight: bold;
@@ -380,6 +397,11 @@ footer{
     margin-left: 24px;
 
     .info{
+        display: flex;
         padding-bottom: 12px;
     }
+}
+
+.footer-emoji{
+    margin-right: 10px;
 }
