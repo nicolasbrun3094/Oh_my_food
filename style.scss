@@ -56,7 +56,7 @@ $green-mint:#99e2d0;
 
 @mixin inside-btn {
     font-size: 1.5em;
-    height: 50px;
+    height: 60px;
     border-radius: 50px;
     background: linear-gradient(#9f5adc,#d66cda);
     color: #ffffff;
@@ -319,16 +319,22 @@ figcaption{
     font-size: 1.2em;
 }
 
+.pos-name-resto{
+    display: flex;
+    justify-content: space-between;
+}
+
 .last{
     padding-bottom: 62px;
 }
 
 .like{  
-    
+    font-size: 1.8em;
+    margin-right: 25px;
 }
 
 .like:hover{
-   /** #c165db; **/
+   
 }
 
 /*** Card Restaurant ***/

@@ -224,7 +224,7 @@ nav {
 
 .btn {
   font-size: 1.5em;
-  height: 50px;
+  height: 60px;
   border-radius: 50px;
   background: -webkit-gradient(linear, left top, left bottom, from(#9f5adc), to(#d66cda));
   background: linear-gradient(#9f5adc, #d66cda);
@@ -296,7 +296,7 @@ nav {
 
 .btn3 {
   font-size: 1.5em;
-  height: 50px;
+  height: 60px;
   border-radius: 50px;
   background: -webkit-gradient(linear, left top, left bottom, from(#9f5adc), to(#d66cda));
   background: linear-gradient(#9f5adc, #d66cda);
@@ -373,12 +373,22 @@ figcaption {
   font-size: 1.2em;
 }
 
+.pos-name-resto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .last {
   padding-bottom: 62px;
 }
 
-.like:hover {
-  /** #c165db; **/
+.like {
+  font-size: 1.8em;
+  margin-right: 25px;
 }
 
 /*** Card Restaurant ***/
