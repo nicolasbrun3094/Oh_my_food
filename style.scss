@@ -58,7 +58,7 @@ $green-mint:#99e2d0;
     font-size: 1.5em;
     height: 50px;
     border-radius: 50px;
-    background-color: #db6edb;
+    background: linear-gradient(#9f5adc,#d66cda);
     color: #ffffff;
 }
 
@@ -237,6 +237,14 @@ nav{
 
 .btn2:hover{
     background-color: #f5edff;
+}
+
+.number{
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #9356dc;
 }
 
 

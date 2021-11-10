@@ -226,7 +226,8 @@ nav {
   font-size: 1.5em;
   height: 50px;
   border-radius: 50px;
-  background-color: #db6edb;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9f5adc), to(#d66cda));
+  background: linear-gradient(#9f5adc, #d66cda);
   color: #ffffff;
   margin-top: 30px;
   border-style: none;
@@ -273,6 +274,14 @@ nav {
   background-color: #f5edff;
 }
 
+.number {
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #9356dc;
+}
+
 .placement-btn3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -289,7 +298,8 @@ nav {
   font-size: 1.5em;
   height: 50px;
   border-radius: 50px;
-  background-color: #db6edb;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9f5adc), to(#d66cda));
+  background: linear-gradient(#9f5adc, #d66cda);
   color: #ffffff;
   margin-top: 45px;
   border-style: none;
