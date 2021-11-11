@@ -346,6 +346,16 @@ figcaption a {
   z-index: 0;
 }
 
+.placement-new {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+}
+
 .news {
   text-align: center;
   font-family: 'Roboto', sans-serif;

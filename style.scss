@@ -300,6 +300,12 @@ figcaption a{
     z-index: 0;
 }
 
+.placement-new{
+    justify-content: flex-end;
+    display: flex;
+    margin-right: 10px;
+}
+
 .news{
     text-align: center;
     font-family: 'Roboto', sans-serif;
