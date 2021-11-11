@@ -307,8 +307,10 @@ figcaption a{
     color: #008766;
     width: 95px;
     padding: 10px;
-    position: relative;
+    position: absolute;
     z-index: 1;
+    margin-top: -155px;
+    margin-left: 275px;
 }
 
 figure{
