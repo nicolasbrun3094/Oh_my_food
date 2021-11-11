@@ -313,7 +313,10 @@ nav {
   margin-right: 25px;
 }
 
-.emoji:hover {
+/**.emoji > p:hover{
+    color: #9356dc;
+}**/
+.btn2 ~ .emoji p:hover {
   color: #9356dc;
 }
 
@@ -339,6 +342,19 @@ figcaption a {
   margin-bottom: 16px;
   -webkit-box-shadow: 0px 0px 15px #c6c6c6;
           box-shadow: 0px 0px 15px #c6c6c6;
+  position: relative;
+  z-index: 0;
+}
+
+.news {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #99e2d0;
+  color: #008766;
+  width: 95px;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 figure {
