@@ -197,6 +197,7 @@ h6 {
 }
 
 .details {
+  font-family: 'Roboto', sans-serif;
   font-size: 1.25em;
   text-align: center;
   margin-top: 20px;
@@ -516,6 +517,10 @@ figcaption {
 /*** Footer ***/
 footer {
   background-color: #353535;
+}
+
+footer p {
+  font-family: 'Roboto', sans-serif;
 }
 
 .foot {
