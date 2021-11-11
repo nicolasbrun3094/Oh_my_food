@@ -167,6 +167,7 @@ h6{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .reserved{
@@ -237,6 +238,10 @@ nav{
 
 .btn2:hover{
     background-color: #f5edff;
+    color: #9356dc;
+    .emoji{
+        color: #9356dc;
+    }
 }
 
 .number{
@@ -268,13 +273,10 @@ nav{
     margin-right: 25px;
 }
 
-/**.emoji > p:hover{
+/*.emoji, p:hover{
     color: #9356dc;
-}**/
+}*/
 
-.btn2 ~.emoji p:hover{
-    color: #9356dc;
-}
 /*** Card ***/
 
 .menu{

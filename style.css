@@ -177,6 +177,10 @@ h6 {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .reserved {
@@ -272,6 +276,11 @@ nav {
 
 .btn2:hover {
   background-color: #f5edff;
+  color: #9356dc;
+}
+
+.btn2:hover .emoji {
+  color: #9356dc;
 }
 
 .number {
@@ -313,13 +322,9 @@ nav {
   margin-right: 25px;
 }
 
-/**.emoji > p:hover{
+/*.emoji, p:hover{
     color: #9356dc;
-}**/
-.btn2 ~ .emoji p:hover {
-  color: #9356dc;
-}
-
+}*/
 /*** Card ***/
 .menu {
   width: 100%;
