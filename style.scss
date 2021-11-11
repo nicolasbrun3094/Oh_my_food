@@ -245,6 +245,7 @@ nav{
 }
 
 .number{
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -322,7 +323,8 @@ figcaption a{
     padding: 10px;
     position: absolute;
     z-index: 1;
-    margin-top: -155px;
+    top: 10px;
+    right: 10px;
     margin-left: 275px;
 }
 
@@ -400,7 +402,7 @@ figcaption{
     border-top-right-radius: 35px;
     z-index: 1;
     position: relative;
-    margin-top: -50px;
+    bottom: 35px;
     background-color: #f6f6f6;
 }
 
