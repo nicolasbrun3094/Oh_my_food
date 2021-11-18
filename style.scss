@@ -224,6 +224,7 @@ nav{
     box-shadow: 0px 0px 15px #e7e7e7;
     font-size: 1.2em;
     z-index: 0;
+    width: 320px;
     height: 72px;
     display: flex;
     align-items: center;
@@ -232,7 +233,7 @@ nav{
 }
 
 .txt-fonction{
-    padding-right: 70px;
+    padding-right: 35px;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
@@ -255,7 +256,7 @@ nav{
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    margin-right: 361px;
+    margin-right: 320px;
     background-color: #9356dc;
 }
 
@@ -279,10 +280,6 @@ nav{
     margin-left: 30px;
     margin-right: 25px;
 }
-
-/*.emoji, p:hover{
-    color: #9356dc;
-}*/
 
 /*** Card ***/
 
@@ -458,4 +455,89 @@ footer p{
 
 .footer-emoji{
     margin-right: 10px;
+}
+
+/*** ANIMATION ***/
+
+/*.loader{
+    border: 1px solid #f3f3f3;
+    border-top: 10px solid $green-mint;
+    border-bottom: 10px solid #9b59b6;
+    border-left: 10px solid $green-mint;
+    border-right: 10px solid #9b59b6;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-animation: spin 3s linear infinite;
+    -o-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+    @keyframes spin {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+}*/
+
+.flat{
+    animation-name: spawn;
+    animation-duration: 3000ms;
+    animation-delay: 500ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    @keyframes spawn {
+        0%{
+            transform: translateY(10vh);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        
+    }
+}
+
+/*** MEDIA QUERIES ***/
+
+@media screen and (min-width: 1010px){
+    .list{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .number{
+        display: none;
+    }
+
+    .btn2{
+        justify-content: space-evenly;
+        max-width: 100%;
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .list{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .number{
+        display: none;
+    }
+
+    .btn2{
+        justify-content: space-evenly;
+        max-width: 100%;
+        margin: 5px;
+    }
 }
