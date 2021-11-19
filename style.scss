@@ -133,7 +133,6 @@ h6{
 /*** Head ***/
 
 .title{
-    border-top: 2px solid black;
     display: flex;
     height: 60px;
 }
@@ -328,7 +327,6 @@ figcaption a{
 
 figure{
     background-color: #efefef;
-    margin-top: 65px;
 }
 
 figcaption{
@@ -381,7 +379,7 @@ figcaption{
 }
 
 .card h2{
-    font-size: 2em;
+    font-size: 1.5em;
     display: flex;
     justify-content: space-between;
     font-family: 'Shrikhand', cursive;
@@ -423,6 +421,7 @@ figcaption{
     margin-left: 13px;
     display: flex;
     justify-content: space-between;
+    font-size: 0.9em;
 }
 
 .desc-flat p{
@@ -489,8 +488,8 @@ footer p{
 
 .flat{
     animation-name: spawn;
-    animation-duration: 3000ms;
-    animation-delay: 500ms;
+    animation-duration: 1000ms;
+    animation-delay: 200ms;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     @keyframes spawn {
