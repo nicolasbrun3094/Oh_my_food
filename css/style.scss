@@ -387,7 +387,7 @@ figcaption{
 
 .bg_card{
     object-fit: cover;
-    max-height: 450px;
+    max-height: 250px;
     width: 100%;
     z-index: 0;
     position: relative;
@@ -432,6 +432,11 @@ figcaption{
     font-weight: bold;
 }
 
+.slide-left{
+    font-size: 1.5em;
+    background-color: $green-mint;
+}
+
 /*** Footer ***/
 
 footer{
@@ -458,7 +463,7 @@ footer p{
 
 /*** ANIMATION ***/
 
-/*.loader{
+.loader{
     border: 1px solid #f3f3f3;
     border-top: 10px solid $green-mint;
     border-bottom: 10px solid #9b59b6;
@@ -468,7 +473,8 @@ footer p{
     width: 100px;
     height: 100px;
     margin: auto;
-    position: absolute;
+    position: fixed;
+    z-index: 1000;
     top: 0;
     left: 0;
     right: 0;
@@ -476,6 +482,7 @@ footer p{
     -webkit-animation: spin 3s linear infinite;
     -o-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
+
     @keyframes spin {
         0%{
             transform: rotate(0deg);
@@ -484,7 +491,7 @@ footer p{
             transform: rotate(360deg);
         }
     }
-}*/
+}
 
 .flat{
     animation-name: spawn;
@@ -513,10 +520,6 @@ footer p{
         flex-direction: row;
     }
 
-    .number{
-        display: none;
-    }
-
     .btn2{
         justify-content: space-evenly;
         max-width: 100%;
@@ -528,10 +531,6 @@ footer p{
     .list{
         display: flex;
         flex-direction: row;
-    }
-
-    .number{
-        display: none;
     }
 
     .btn2{
