@@ -59,7 +59,11 @@ $green-mint:#99e2d0;
     height: 60px;
     border-radius: 50px;
     background: linear-gradient(#9f5adc,#d66cda);
-    color: #ffffff;
+    color: #ffffff; 
+    & :hover{
+        background: linear-gradient(to top,#9f5adc,white);
+        box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
+    }
 }
 
 /*** General ***/
@@ -118,7 +122,7 @@ h5{
     margin-left: 25px;
     padding-bottom: 7px;
     font-size: 1.2em;
-    width: 10%;
+    width: 45px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -405,6 +409,7 @@ figcaption{
 .heart-card{
     margin-right: 35px;
 }
+
 .flat{
     box-shadow: 0px 0px 15px #e8e8e8;
     padding-bottom: 5px;
@@ -435,6 +440,7 @@ figcaption{
 .slide-left{
     font-size: 1.5em;
     background-color: $green-mint;
+    color: white;
 }
 
 /*** Footer ***/
@@ -462,6 +468,10 @@ footer p{
 }
 
 /*** ANIMATION ***/
+
+.back-white{
+    animation: fade 4s linear forwards;
+}
 
 .loader{
     border: 1px solid #f3f3f3;
@@ -491,14 +501,21 @@ footer p{
             transform: rotate(360deg);
         }
     }
+
+    @keyframes fade {
+        0%,100%{opacity: 0;}
+        50% {opacity: 1;}
+        
+    }
 }
 
-.flat{
+.spawn-flat{
     animation-name: spawn;
     animation-duration: 1000ms;
     animation-delay: 200ms;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
+
     @keyframes spawn {
         0%{
             transform: translateY(10vh);
@@ -511,6 +528,54 @@ footer p{
         
     }
 }
+
+.spawn-flat2{
+    animation-name: spawn;
+    animation-duration: 1000ms;
+    animation-delay: 800ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+.spawn-flat3{
+    animation-name: spawn;
+    animation-duration: 1000ms;
+    animation-delay: 1500ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+.slide-left{
+    height: 70px;
+}
+
+:hover.flat {
+    .slide-left{
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
 
 /*** MEDIA QUERIES ***/
 
