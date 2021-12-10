@@ -454,11 +454,10 @@ figcaption {
   margin-right: 25px;
   opacity: 0;
   color: linear-gradient(#9f5adc, #d66cda);
-}
-
-.like2:hover {
-  -webkit-animation: fade 7s linear forwards;
-          animation: fade 7s linear forwards;
+  /* background 
+    &:hover{
+        animation: fade 7s linear forwards;
+    } */
 }
 
 /*** Card Restaurant ***/
@@ -572,7 +571,7 @@ footer p {
 
 /*** ANIMATION ***/
 .back-white {
-  /*z-index: 1000;*/
+  z-index: 1000;
   height: 100%;
   width: 100%;
   top: 0;
@@ -628,20 +627,28 @@ footer p {
 }
 
 @-webkit-keyframes fade {
-  0%, 100% {
+  0% {
     opacity: 0;
   }
   50% {
     opacity: 1;
+  }
+  100% {
+    z-index: -1000;
+    opacity: 0;
   }
 }
 
 @keyframes fade {
-  0%, 100% {
+  0% {
     opacity: 0;
   }
   50% {
     opacity: 1;
+  }
+  100% {
+    z-index: -1000;
+    opacity: 0;
   }
 }
 

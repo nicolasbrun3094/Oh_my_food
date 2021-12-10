@@ -372,9 +372,10 @@ figcaption{
     margin-right: 25px;
     opacity: 0;
     color: linear-gradient(#9f5adc,#d66cda);
+    /* background 
     &:hover{
         animation: fade 7s linear forwards;
-    }
+    } */
 }
 
 /*** Card Restaurant ***/
@@ -478,7 +479,7 @@ footer p{
 /*** ANIMATION ***/
 
 .back-white{
-    /*z-index: 1000;*/
+    z-index: 1000;
     height: 100%;
     width: 100%;
     top: 0;
@@ -519,8 +520,10 @@ footer p{
     }
 
     @keyframes fade {
-        0%,100%{opacity: 0;}
+        0%{opacity: 0;}
         50% {opacity: 1;}
+        100% {z-index: -1000;; opacity: 0;}
+
     }
 }
 
