@@ -522,12 +522,17 @@ figcaption {
   position: absolute;
   top: 0px;
   opacity: 0;
-  color: #FFF;
+  color: red;
 }
 
 .heart__2:hover {
   -webkit-animation: heart__full__opacity 1s forwards;
           animation: heart__full__opacity 1s forwards;
+}
+
+.heart__2 .fa-check-circle {
+  -webkit-animation: spin-menu 1s ease-in-out;
+          animation: spin-menu 1s ease-in-out;
 }
 
 .like {
@@ -540,6 +545,28 @@ figcaption {
   font-size: 1.8em;
   margin-right: 25px;
   opacity: 0;
+}
+
+@-webkit-keyframes spin-menu {
+  0% {
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes spin-menu {
+  0% {
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
 }
 
 /*** Card Restaurant ***/
@@ -608,6 +635,9 @@ figcaption {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 0.9em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .desc-flat p {
@@ -617,13 +647,13 @@ figcaption {
 
 .price {
   font-weight: bold;
+  margin-left: auto;
 }
 
 .slide-left {
   font-size: 1.5em;
   background-color: #99e2d0;
   color: white;
-  display: none;
 }
 
 /*** Footer ***/
@@ -804,7 +834,7 @@ footer p {
   display: none;
 }
 
-:hover.flat .slide-left {
+:hover.flat .slide {
   -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }

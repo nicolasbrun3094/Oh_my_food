@@ -415,10 +415,13 @@ $colour-secondary: #FF79DA;
         position: absolute;
         top: 0px;
         opacity: 0;
-        color: #FFF;
+        color: red;
 
         &:hover {
             animation: heart__full__opacity 1s forwards;
+        }
+        .fa-check-circle{
+            animation: spin-menu 1s ease-in-out;
         }
     }
 }  
@@ -432,6 +435,15 @@ $colour-secondary: #FF79DA;
     font-size: 1.8em;
     margin-right: 25px;
     opacity: 0;
+}
+
+@keyframes spin-menu{
+    0%{
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
 }
 
 /*** Card Restaurant ***/
@@ -491,6 +503,9 @@ $colour-secondary: #FF79DA;
     display: flex;
     justify-content: space-between;
     font-size: 0.9em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .desc-flat p{
@@ -499,13 +514,13 @@ $colour-secondary: #FF79DA;
 }
 .price{
     font-weight: bold;
+    margin-left: auto;
 }
 
 .slide-left{
     font-size: 1.5em;
     background-color: $green-mint;
     color: white;
-    display: none;
 }
 
 /*** Footer ***/
@@ -625,7 +640,7 @@ footer p{
 }
 
 :hover.flat {
-    .slide-left{
+    .slide{
     -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
