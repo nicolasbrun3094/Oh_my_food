@@ -682,7 +682,10 @@ footer p{
 }
 
 .flat:hover i{
-        animation: spin-menu 1s ease-in-out;
+        /*animation: spin-menu 1s ease-in-out;*/
+        width: 105px;
+        text-align: center;
+        padding-top: 27px;
 }
 
 /*** MEDIA QUERIES ***/
