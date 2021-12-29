@@ -413,15 +413,13 @@ $colour-secondary: #FF79DA;
 
     &__2 {
         position: absolute;
+        z-index: 90000;
         top: 0px;
         opacity: 0;
-        color: red;
+        color: #fff
 
         &:hover {
             animation: heart__full__opacity 1s forwards;
-        }
-        .fa-check-circle{
-            animation: spin-menu 1s ease-in-out;
         }
     }
 }  
@@ -435,15 +433,6 @@ $colour-secondary: #FF79DA;
     font-size: 1.8em;
     margin-right: 25px;
     opacity: 0;
-}
-
-@keyframes spin-menu{
-    0%{
-        transform: rotate(-270deg);
-    }
-    100%{
-        transform: rotate(0);
-    }
 }
 
 /*** Card Restaurant ***/
@@ -495,6 +484,9 @@ $colour-secondary: #FF79DA;
     margin-top: 14px;
     border-radius: 15px;
     height: 70px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
 }
 
 .desc-flat{
@@ -503,24 +495,30 @@ $colour-secondary: #FF79DA;
     display: flex;
     justify-content: space-between;
     font-size: 0.9em;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
 .desc-flat p{
     margin-top: 10px;
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
+
 .price{
     font-weight: bold;
     margin-left: auto;
+    margin-top: 50px;
+    margin-right: 10px;
 }
 
 .slide-left{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     font-size: 1.5em;
     background-color: $green-mint;
     color: white;
+    margin-right: -350px;
 }
 
 /*** Footer ***/
@@ -646,6 +644,13 @@ footer p{
     }
 }
 
+:hover.flat{
+    .price{
+        -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+}
+
 @-webkit-keyframes slide-left {
     0% {
       -webkit-transform: translateX(0);
@@ -666,6 +671,19 @@ footer p{
               transform: translateX(-100px);
     }
   }
+
+  @keyframes spin-menu{
+    0%{
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
+.flat:hover i{
+        animation: spin-menu 1s ease-in-out;
+}
 
 /*** MEDIA QUERIES ***/
 

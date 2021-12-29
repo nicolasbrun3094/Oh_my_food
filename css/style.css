@@ -520,19 +520,15 @@ figcaption {
 
 .heart__2 {
   position: absolute;
+  z-index: 90000;
   top: 0px;
   opacity: 0;
-  color: red;
+  color: #fff .heart__2;
 }
 
-.heart__2:hover {
+.heart__2 :hover {
   -webkit-animation: heart__full__opacity 1s forwards;
           animation: heart__full__opacity 1s forwards;
-}
-
-.heart__2 .fa-check-circle {
-  -webkit-animation: spin-menu 1s ease-in-out;
-          animation: spin-menu 1s ease-in-out;
 }
 
 .like {
@@ -545,28 +541,6 @@ figcaption {
   font-size: 1.8em;
   margin-right: 25px;
   opacity: 0;
-}
-
-@-webkit-keyframes spin-menu {
-  0% {
-    -webkit-transform: rotate(-270deg);
-            transform: rotate(-270deg);
-  }
-  100% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-}
-
-@keyframes spin-menu {
-  0% {
-    -webkit-transform: rotate(-270deg);
-            transform: rotate(-270deg);
-  }
-  100% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
 }
 
 /*** Card Restaurant ***/
@@ -623,6 +597,12 @@ figcaption {
   margin-top: 14px;
   border-radius: 15px;
   height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 .desc-flat {
@@ -635,25 +615,30 @@ figcaption {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 0.9em;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .desc-flat p {
   margin-top: 10px;
   font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .price {
   font-weight: bold;
   margin-left: auto;
+  margin-top: 50px;
+  margin-right: 10px;
 }
 
 .slide-left {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   font-size: 1.5em;
   background-color: #99e2d0;
   color: white;
+  margin-right: -350px;
 }
 
 /*** Footer ***/
@@ -839,6 +824,11 @@ footer p {
   animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+:hover.flat .price {
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
 @-webkit-keyframes slide-left {
   0% {
     -webkit-transform: translateX(0);
@@ -859,6 +849,33 @@ footer p {
     -webkit-transform: translateX(-100px);
     transform: translateX(-100px);
   }
+}
+
+@-webkit-keyframes spin-menu {
+  0% {
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes spin-menu {
+  0% {
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+.flat:hover i {
+  -webkit-animation: spin-menu 1s ease-in-out;
+          animation: spin-menu 1s ease-in-out;
 }
 
 /*** MEDIA QUERIES ***/
