@@ -121,8 +121,6 @@ h5 {
 h6 {
   font-family: 'Roboto', sans-serif;
   font-size: 1.3em;
-  margin-left: 13px;
-  margin-top: 18px;
   padding-top: 15px;
 }
 
@@ -611,9 +609,10 @@ figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 0.9em;
 }
 
@@ -630,6 +629,16 @@ figcaption {
   margin-left: auto;
   margin-top: 50px;
   margin-right: 10px;
+}
+
+.slide {
+  /*animation: spin-menu 1s ease-in-out;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 1.5em;
+    background-color: $green-mint;
+    color: white;
+    margin-right: -350px;*/
 }
 
 .slide-left {
@@ -874,7 +883,6 @@ footer p {
 }
 
 .flat:hover i {
-  /*animation: spin-menu 1s ease-in-out;*/
   width: 105px;
   text-align: center;
   padding-top: 27px;

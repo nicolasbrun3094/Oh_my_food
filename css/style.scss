@@ -129,8 +129,6 @@ h5{
 h6{
     font-family: 'Roboto', sans-serif;
     font-size: 1.3em;
-    margin-left: 13px;
-    margin-top: 18px;
     padding-top: 15px;
 }
 
@@ -493,7 +491,7 @@ $colour-secondary: #FF79DA;
     margin-right: 13px;
     margin-left: 13px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     font-size: 0.9em;
 }
 
@@ -510,6 +508,16 @@ $colour-secondary: #FF79DA;
     margin-left: auto;
     margin-top: 50px;
     margin-right: 10px;
+}
+
+.slide{
+    /*animation: spin-menu 1s ease-in-out;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 1.5em;
+    background-color: $green-mint;
+    color: white;
+    margin-right: -350px;*/
 }
 
 .slide-left{
@@ -682,7 +690,6 @@ footer p{
 }
 
 .flat:hover i{
-        /*animation: spin-menu 1s ease-in-out;*/
         width: 105px;
         text-align: center;
         padding-top: 27px;
