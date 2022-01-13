@@ -99,6 +99,7 @@ h2{
     padding-top: 25px;
     margin-left: 30px;
     margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 h3{
@@ -412,9 +413,9 @@ $colour-secondary: #FF79DA;
     &__2 {
         position: absolute;
         z-index: 90000;
-        top: 0px;
         opacity: 0;
-        color: #fff
+        right: 49px;
+        top: 185px;
 
         &:hover {
             animation: heart__full__opacity 1s forwards;
@@ -429,8 +430,6 @@ $colour-secondary: #FF79DA;
 
 .like2{
     font-size: 1.8em;
-    margin-right: 25px;
-    opacity: 0;
 }
 
 /*** Card Restaurant ***/
@@ -510,7 +509,7 @@ $colour-secondary: #FF79DA;
     margin-right: 10px;
 }
 
-.slide{
+.slide {
     /*animation: spin-menu 1s ease-in-out;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -520,6 +519,14 @@ $colour-secondary: #FF79DA;
     margin-right: -350px;*/
 }
 
+:hover.flat i{
+    animation: spin-menu 1s ease-in-out;
+    }
+
+/*.fa-check-circle{
+    animation: spin-menu 1s ease-in-out;
+}*/
+
 .slide-left{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -528,6 +535,10 @@ $colour-secondary: #FF79DA;
     color: white;
     margin-right: -350px;
 }
+
+/*:hover.flat .slide-left i{
+    animation: spin-menu 1s ease-in-out;
+}*/
 
 /*** Footer ***/
 
