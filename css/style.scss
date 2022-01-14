@@ -510,16 +510,14 @@ $colour-secondary: #FF79DA;
 }
 
 .slide {
-    /*animation: spin-menu 1s ease-in-out;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     font-size: 1.5em;
     background-color: $green-mint;
-    color: white;
-    margin-right: -350px;*/
+    margin-right: -350px;/*traform sur slide*/
 }
 
-:hover.flat i{
+.flat:hover i{
     animation: spin-menu 1s ease-in-out;
     }
 
@@ -528,12 +526,13 @@ $colour-secondary: #FF79DA;
 }*/
 
 .slide-left{
-    border-top-right-radius: 15px;
+    color: white;
+   /* border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     font-size: 1.5em;
     background-color: $green-mint;
     color: white;
-    margin-right: -350px;
+    margin-right: -350px;*/
 }
 
 /*:hover.flat .slide-left i{
@@ -562,6 +561,10 @@ footer p{
 
 .footer-emoji{
     margin-right: 10px;
+}
+
+footer p{
+    color: white;
 }
 
 /*** ANIMATION ***/

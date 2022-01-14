@@ -631,16 +631,15 @@ figcaption {
 }
 
 .slide {
-  /*animation: spin-menu 1s ease-in-out;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    font-size: 1.5em;
-    background-color: $green-mint;
-    color: white;
-    margin-right: -350px;*/
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-size: 1.5em;
+  background-color: #99e2d0;
+  margin-right: -350px;
+  /*traform sur slide*/
 }
 
-:hover.flat i {
+.flat:hover i {
   -webkit-animation: spin-menu 1s ease-in-out;
           animation: spin-menu 1s ease-in-out;
 }
@@ -649,12 +648,13 @@ figcaption {
     animation: spin-menu 1s ease-in-out;
 }*/
 .slide-left {
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  font-size: 1.5em;
-  background-color: #99e2d0;
   color: white;
-  margin-right: -350px;
+  /* border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 1.5em;
+    background-color: $green-mint;
+    color: white;
+    margin-right: -350px;*/
 }
 
 /*:hover.flat .slide-left i{
@@ -683,6 +683,10 @@ footer p {
 
 .footer-emoji {
   margin-right: 10px;
+}
+
+footer p {
+  color: white;
 }
 
 /*** ANIMATION ***/
