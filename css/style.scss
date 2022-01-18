@@ -476,7 +476,7 @@ $colour-secondary: #FF79DA;
     box-shadow: 0px 0px 15px #e8e8e8;
     padding-bottom: 5px;
     margin-left: 12px;
-    margin-right: 12px;
+    /*margin-right: 12px;*/
     margin-bottom: 14px;
     margin-top: 14px;
     border-radius: 15px;
@@ -514,8 +514,9 @@ $colour-secondary: #FF79DA;
     border-bottom-right-radius: 15px;
     font-size: 1.5em;
     background-color: $green-mint;
-    margin-right: -7rem;/*traform sur slide*/
-}
+    -webkit-transform: translate(23px, 0px);
+    transform: translate(23px, 0px);
+    }
 
 .flat:hover i{
     animation: spin-menu 1s ease-in-out;
@@ -689,8 +690,8 @@ footer p{
               transform: translateX(0);
     }
     100% {
-      -webkit-transform: translateX(-100px);
-              transform: translateX(-100px);
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
     }
   }
 
@@ -723,5 +724,5 @@ footer p{
     .list{
         display: flex;
         flex-direction: column;
-    }
+    } 
 }
