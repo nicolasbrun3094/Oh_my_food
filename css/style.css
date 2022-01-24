@@ -505,7 +505,7 @@ figcaption {
 .heart {
   position: absolute;
   right: 20px;
-  top: 1;
+  top: 1px;
 }
 
 .heart__1 {
