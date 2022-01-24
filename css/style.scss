@@ -51,6 +51,8 @@ table {
 
 $grey:#eaeaea;
 $green-mint:#99e2d0;
+$colour-primary: #9356DC;
+$colour-secondary: #FF79DA;
 
 /*** Mixin ***/
 
@@ -360,68 +362,6 @@ figcaption{
     padding-bottom: 62px;
 }
 
-$colour-primary: #9356DC;
-$colour-secondary: #FF79DA;
-
-@keyframes heart__full__opacity {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0.5;
-        background-image: linear-gradient(100deg, $colour-primary, $colour-secondary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    100% {
-        opacity: 1;
-        background-image: linear-gradient(100deg, $colour-primary, $colour-secondary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
-
-@keyframes heart__empty__opacity1 {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-.heart {
-    position: absolute;
-    right: 20px;
-    top: 1px;
-
-    &__1 {
-        position: relative;
-
-        &:hover {
-            animation: heart__empty__opacity1 1s;
-        }
-    }
-
-    &__2 {
-        position: absolute;
-        z-index: 90000;
-        opacity: 0;
-        right: 49px;
-        top: 185px;
-
-        &:hover {
-            animation: heart__full__opacity 1s forwards;
-        }
-    }
-}  
 .like{  
     font-size: 1.8em;
     position: absolute;
@@ -520,10 +460,6 @@ $colour-secondary: #FF79DA;
 .flat:hover i{
     animation: spin-menu 1s ease-in-out;
     }
-
-/*.fa-check-circle{
-    animation: spin-menu 1s ease-in-out;
-}*/
 
 .slide-left{
     color: white;
@@ -663,6 +599,65 @@ footer p{
     }
 }
 
+@keyframes heart__full__opacity {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+        background-image: linear-gradient(100deg, $colour-primary, $colour-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    100% {
+        opacity: 1;
+        background-image: linear-gradient(100deg, $colour-primary, $colour-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@keyframes heart__empty__opacity1 {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.heart {
+    position: absolute;
+    right: 20px;
+    top: 1px;
+
+    &__1 {
+        position: relative;
+
+        &:hover {
+            animation: heart__empty__opacity1 1s;
+        }
+    }
+
+    &__2 {
+        position: absolute;
+        z-index: 90000;
+        opacity: 0;
+        right: 49px;
+        top: 185px;
+
+        &:hover {
+            animation: heart__full__opacity 1s forwards;
+        }
+    }
+}  
 @-webkit-keyframes slide-left {
     0% {
       -webkit-transform: translateX(0);
