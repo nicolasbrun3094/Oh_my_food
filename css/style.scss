@@ -133,6 +133,9 @@ h6{
     font-family: 'Roboto', sans-serif;
     font-size: 1.3em;
     padding-top: 15px;
+    /*overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;*/
 }
 
 /*** Head ***/
@@ -436,6 +439,7 @@ figcaption{
 
 .heart-card{
     margin-right: 35px;
+    font-size: 1.3em;
 }
 
 .flat{
@@ -447,8 +451,6 @@ figcaption{
     border-radius: 15px;
     height: 70px;
     display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
 }
 
 .desc-flat{
@@ -462,9 +464,6 @@ figcaption{
 .desc-flat p{
     margin-top: 10px;
     font-family: 'Roboto', sans-serif;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
 .price{
