@@ -452,6 +452,34 @@ figcaption {
   font-size: 1.8em;
 }
 
+.heart {
+  position: absolute;
+  right: 20px;
+  top: 1px;
+}
+
+.heart__1 {
+  position: relative;
+}
+
+.heart__1:hover {
+  -webkit-animation: heart__empty__opacity1 1s;
+          animation: heart__empty__opacity1 1s;
+}
+
+.heart__2 {
+  position: absolute;
+  z-index: 90000;
+  opacity: 0;
+  right: 49px;
+  top: 185px;
+}
+
+.heart__2:hover {
+  -webkit-animation: heart__full__opacity 1s forwards;
+          animation: heart__full__opacity 1s forwards;
+}
+
 /*** Card Restaurant ***/
 .main {
   background-color: #f6f6f6;
@@ -552,8 +580,8 @@ figcaption {
 }
 
 .flat:hover i {
-  -webkit-animation: spin-menu 1s ease-in-out;
-          animation: spin-menu 1s ease-in-out;
+  -webkit-animation: spin-menu 0.7s ease-in-out;
+          animation: spin-menu 0.7s ease-in-out;
 }
 
 .slide-left {
@@ -648,10 +676,10 @@ footer p {
 
 @-webkit-keyframes fade {
   0% {
-    opacity: 0;
+    opacity: 1;
   }
   50% {
-    opacity: 1;
+    opacity: 0.5;
   }
   100% {
     z-index: -1000;
@@ -661,10 +689,10 @@ footer p {
 
 @keyframes fade {
   0% {
-    opacity: 0;
+    opacity: 1;
   }
   50% {
-    opacity: 1;
+    opacity: 0.5;
   }
   100% {
     z-index: -1000;
@@ -812,38 +840,10 @@ footer p {
   }
 }
 
-.heart {
-  position: absolute;
-  right: 20px;
-  top: 1px;
-}
-
-.heart__1 {
-  position: relative;
-}
-
-.heart__1:hover {
-  -webkit-animation: heart__empty__opacity1 1s;
-          animation: heart__empty__opacity1 1s;
-}
-
-.heart__2 {
-  position: absolute;
-  z-index: 90000;
-  opacity: 0;
-  right: 49px;
-  top: 185px;
-}
-
-.heart__2:hover {
-  -webkit-animation: heart__full__opacity 1s forwards;
-          animation: heart__full__opacity 1s forwards;
-}
-
 @-webkit-keyframes slide-left {
   0% {
     -webkit-transform: translateX(100px);
-    transform: translateX(100);
+    transform: translateX(100px);
   }
   100% {
     -webkit-transform: translateX(0px);
@@ -864,8 +864,8 @@ footer p {
 
 @-webkit-keyframes spin-menu {
   0% {
-    -webkit-transform: rotate(-270deg);
-            transform: rotate(-270deg);
+    -webkit-transform: rotate(260deg);
+            transform: rotate(260deg);
   }
   100% {
     -webkit-transform: rotate(0);
@@ -875,8 +875,8 @@ footer p {
 
 @keyframes spin-menu {
   0% {
-    -webkit-transform: rotate(-270deg);
-            transform: rotate(-270deg);
+    -webkit-transform: rotate(260deg);
+            transform: rotate(260deg);
   }
   100% {
     -webkit-transform: rotate(0);
