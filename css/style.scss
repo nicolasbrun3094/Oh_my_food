@@ -449,6 +449,7 @@ figcaption{
 }
 
 .slide {
+    height: 75px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     font-size: 1.5em;
@@ -660,19 +661,20 @@ footer p{
 }  
 @-webkit-keyframes slide-left {
     0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
+      -webkit-transform: translateX(100px);
+              transform: translateX(100);
     }
     100% {
-      -webkit-transform: translateX(-100px);
-              transform: translateX(-100px);
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
     }
   }
   @keyframes slide-left {
     0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
     }
+
     100% {
       -webkit-transform: translateX(0px);
               transform: translateX(0px);
