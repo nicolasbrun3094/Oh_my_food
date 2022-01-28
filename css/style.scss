@@ -133,9 +133,7 @@ h6{
     font-family: 'Roboto', sans-serif;
     font-size: 1.3em;
     padding-top: 15px;
-    /*overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;*/
 }
 
 /*** Head ***/
@@ -446,11 +444,13 @@ figcaption{
     box-shadow: 0px 0px 15px #e8e8e8;
     padding-bottom: 5px;
     margin-left: 12px;
+    margin-right: 12px;
     margin-bottom: 14px;
     margin-top: 14px;
     border-radius: 15px;
     height: 70px;
     display: flex;
+    overflow: hidden;
 }
 
 .desc-flat{
@@ -459,11 +459,25 @@ figcaption{
     display: flex;
     flex-direction: column;
     font-size: 0.9em;
+    width: 50%;
 }
 
 .desc-flat p{
     margin-top: 10px;
     font-family: 'Roboto', sans-serif;
+    white-space: nowrap;
+}
+
+.flat:hover p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.flat:hover h6{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .price{
@@ -480,7 +494,7 @@ figcaption{
     font-size: 1.5em;
     background-color: $green-mint;
     -webkit-transform: translate(23px, 0px);
-    transform: translate(23px, 0px);
+    transform: translate(25px, 0px);
     }
 
 .flat:hover i{
@@ -710,5 +724,11 @@ footer p{
     .list{
         display: flex;
         flex-direction: column;
+    } 
+}
+
+@media screen and (max-width: 400px){
+    .desc-flat p{
+        font-size: 0.9em;
     } 
 }
