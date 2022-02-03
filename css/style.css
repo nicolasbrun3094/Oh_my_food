@@ -577,6 +577,7 @@ figcaption {
   margin-left: auto;
   margin-top: 50px;
   margin-right: 10px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .slide {
@@ -617,6 +618,7 @@ footer p {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 12px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .footer-emoji {
